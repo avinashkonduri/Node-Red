@@ -1,0 +1,27 @@
+{
+  "name": "trendlog",
+  "version": "1.0.0",
+  "description": "To find the Trendlog Count ",
+  "main": "index.js",
+  "node-red": {
+    "nodes": {
+      "Trendlog": "Trendlog.js"
+    }
+  },
+  "scripts": {
+    "test": "tocken,topic,npm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "avinash"
+  },
+  "keywords": [
+    "node",
+    "pallet",
+    "npm",
+    "node",
+    "trendlog"
+  ],
+  "author": "AvinashKonduri",
+  "license": "ISC"
+}

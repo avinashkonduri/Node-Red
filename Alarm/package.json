@@ -1,0 +1,31 @@
+{
+  "name": "alarm",
+  "version": "1.0.0",
+  "description": "To find the alarm occurences which are above 'n' number of days",
+  "main": "index.js",
+  "node-red": {
+    "nodes": {
+      "Alarm": "alarm.js"
+    }
+  },
+  "scripts": {
+    "test": "tocken,topic,npm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avinashkonduri/Node-Red.git"
+  },
+  "keywords": [
+    "node",
+    "pallet",
+    "npm",
+    "node",
+    "alarm"
+  ],
+  "author": "Avinash Konduri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avinashkonduri/Node-Red/issues"
+  },
+  "homepage": "https://github.com/avinashkonduri/Node-Red#readme"
+}
