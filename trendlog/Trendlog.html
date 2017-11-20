@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Trendlog',{
+        category: 'Pointmatter',
+        color: '#94CAD5',
+        defaults: {
+            value: {type:"int"},
+			days: {type:"int"},
+			sid: {type:"int"},
+        },
+        inputs:1,
+        outputs:1,
+        label: function() {
+            return this.name||"Trendlog Inputs";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="Trendlog">
+ 
+    <div class="form-row">
+        <label for="node-input-value"><i class="icon-tag"></i> Threshold Value</label>
+        <input type="text" id="node-input-value" placeholder="Threshold Value">
+    </div>
+	 <div class="form-row">
+        <label for="node-input-days"><i class="icon-tag"></i> No. of days</label>
+        <input type="text" id="node-input-days" placeholder="Number of days">
+    </div>
+	 <div class="form-row">
+        <label for="node-input-sid"><i class="icon-tag"></i>Trendlog SID</label>
+        <input type="text" id="node-input-sid" placeholder="Trendlog SID">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="Trendlog">
+    <p>A node that accepts the Threshold value,No of days and Trendlog in return.<br/>
+    </p>
+</script>

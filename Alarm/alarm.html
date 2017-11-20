@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Alarm',{
+        category: 'Pointmatter',
+        color: '#89DCBC',
+        defaults: {
+			days: {type:"int"},
+			sid: {type:"int"},
+        },
+        inputs:1,
+        outputs:1,
+        label: function() {
+            return this.name||"Alarm Occurrence Input";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="Alarm">
+ 
+	 <div class="form-row">
+        <label for="node-input-days"><i class="icon-tag"></i> No. of days</label>
+        <input type="text" id="node-input-days" placeholder="Number of days">
+    </div>
+	 <div class="form-row">
+        <label for="node-input-sid"><i class="icon-tag"></i>Alarm SID</label>
+        <input type="text" id="node-input-sid" placeholder="Alarm SID">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="Alarm">
+    <p>A node that accepts the No of days and Alarm SID in return.<br/>
+    </p>
+</script>
